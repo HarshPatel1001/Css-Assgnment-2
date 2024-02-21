@@ -1,0 +1,78 @@
+/* Define fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* Body styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc); /* Gradient background for the entire page */
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to right, #333, #555); /* Gradient background for header */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Pacifico', cursive; /* Apply a nice font to the header */
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Main content area styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Subtle pattern for main content */
+}
+
+.lyrics {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px; /* Add padding for space around lyrics */
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Add border with slight transparency */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+}
+
+.lyrics pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-style: italic; /* Emphasize the feeling */
+    text-align: center; /* Center the lyrics */
+}
+
+/* Yelling effect */
+.lyrics pre:nth-child(3n) {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ff0000; /* Red color for yelling effect */
+}
+
+/* Sad or happy effect */
+.lyrics pre:nth-child(odd) {
+    color: #333; /* Default color */
+}
+
+.lyrics pre:nth-child(even) {
+    color: #007bff; /* Blue color for happy effect */
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(to right, #555, #333); /* Gradient background for footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
